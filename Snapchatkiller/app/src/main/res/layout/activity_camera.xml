@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:background="#502f2f2f"
+        android:layout_gravity="right|center_vertical">
+
+        <ImageButton
+            android:id="@+id/button_capture"
+            android:text="Capture"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/camerabutton"
+            android:background="@drawable/roundbutton"
+            android:textColor="#ffffffff" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="125dp"
+            android:id="@+id/button_save"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/savebutton"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="125dp"
+            android:id="@+id/button_cancel"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/cancelbutton"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</FrameLayout>
